@@ -22,11 +22,44 @@
 //Else player clicks on the wrong answer whilst the counter is going and/ or doesnt click on an answer, make them repeat the level (while loop will be used here)."
 //players will be given 60 seconds to answer the question. I'll be using setTimeout for this because it ony calls the function once and
 
-var timer = document.getElementById("timer").innerHTML = "timer";
+//var timer = document.getElementById("timer").innerHTML = "0";
+
+// function Level () {}
+
+//setTimeout( Level, 60000 )
+
+// I am using the setTimeout becaus i only want the level to happen once, unless the player repeats it or fails it. Level is the function . The event is 60000 milliseconds, 60 seconds, which willbe how long the player takes to answer the questions
+
 // i want to access the timer elemenet so i slect its class id.
 
-function countDown()
+//function countDown()
 
 //function template for game 
 
+
+
+
+
+//for getting the right or wrong answer n the level
+
+//function template for right answer
+function wellDone() {
+  document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
+}
+const correctAnswer = document.getElementById("correct").addEventListener("click", function () {
+  console.log("Check!")
+  wellDone()
+})
+//function template for the wrong answer
+function tooBad() {
+  document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
+}
+const wrongAnswer = document.getElementById("wrong-one").addEventListener("click", function () {
+  console.log("whack!")
+  tooBad()
+})
+
+//Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will do this instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated 
+
+//function template that will allow the user to move to the next level if they click on the right answer. i think thiswill be a while loop with if statements. if they click on the right answer they can go on to the next level by clciking go on to the next level. they cannot click go onto the next level till they clickonthe correct answer.
 
