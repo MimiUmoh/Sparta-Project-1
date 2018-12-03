@@ -59,7 +59,7 @@ const wrongAnswer = document.getElementById("wrong-one").addEventListener("click
   tooBad()
 })
 
-//Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will do this instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated 
+//Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will do this instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated. 
 
-//function template that will allow the user to move to the next level if they click on the right answer. i think thiswill be a while loop with if statements. if they click on the right answer they can go on to the next level by clciking go on to the next level. they cannot click go onto the next level till they clickonthe correct answer.
+//an instructions page will always be at the top of the page so the user can click on it for help.
 
