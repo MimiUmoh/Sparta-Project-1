@@ -43,13 +43,13 @@
 //for getting the right or wrong answer n the level
 
 //function template for right answer
-function wellDone() {
-  document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
-}
-const correctAnswer = document.getElementById("correct").addEventListener("click", function () {
-  console.log("Check!")
-  wellDone()
-})
+//function wellDone() {
+//document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
+//}
+//const correctAnswer = document.getElementById("correct").addEventListener("click", function () {
+// console.log("Check!")
+// wellDone()
+//})
 //function template for the wrong answer
 function tooBad() {
   document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
@@ -59,7 +59,20 @@ const wrongAnswer = document.getElementById("wrong-one").addEventListener("click
   tooBad()
 })
 
-//Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will do this instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated. 
+//Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will dothis instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated. 
 
 //An isntructions page will be at the front page. The reader will see it before starting the game.
+
+//tree of life function template
+function treeOfLife() {
+  document.getElementById("first-message").innerHTML = "ITS LEAVES"
+}
+
+function treeOfLife1() {
+  document.getElementById("first-message-two").innerHTML = "ARE FOR"
+}
+
+function tooBad() {
+  document.getElementById("first-message-three").innerHTML = "Your Healing."
+}
 
