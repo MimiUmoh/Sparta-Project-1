@@ -61,5 +61,5 @@ const wrongAnswer = document.getElementById("wrong-one").addEventListener("click
 
 //Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will do this instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated. 
 
-//an instructions page will always be at the top of the page so the user can click on it for help.
+//An isntructions page will be at the front page. The reader will see it before starting the game.
 
