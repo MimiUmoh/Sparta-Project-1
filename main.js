@@ -43,48 +43,28 @@
 
 //for getting the right or wrong answer n the level
 
-//function template for right answer
-let levelOne = document.getElementById("answerOne").addEventListener("click", function () {
-  console.log("Check!")
-  correctAnswerLevelOne()
-});
-if (levelOne == document.getElementById("answerOne").addEventListener("click", function () {
-  console.log("Check!")
-  correctAnswerLevelOne()
-})) {
-  document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
-}
-else {
-  document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
-}
-
-
-
-
-
 
 
 
 //let levelOne = 
 
-//function correctAnswerLevelOne() {
-  ////document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
-//}
-//const correctAnswer = document.getElementById("answerOne").addEventListener("click", function () {
- // console.log("Check!")
- //// correctAnswerLevelOne()
-//});
-
+function correctAnswerLevelOne() {
+  document.getElementById("result-message").innerHTML = "Well Done, You are through to the next level!"
+}
+const correctAnswer = document.getElementById("answerOne").addEventListener("click", function () {
+  console.log("Check!")
+  correctAnswerLevelOne()
+});
 
 
 //function template for the wrong answer
-//function tooBad() {
-  //document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
-//}
-//var wrongAnswer = document.getElementById("wrong-one").addEventListener("click", function () {
- // console.log("whack!")
- //// tooBad()
-//})
+function wrongAnswer() {
+  document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
+}
+const wrongAnswer = document.getElementById("answerTwo").addEventListener("click", function () {
+  console.log("whack!")
+  wrongAnswer()
+});
 
 
 //tree of life function template
