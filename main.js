@@ -32,24 +32,16 @@
 // I am using the setTimeout becaus i only want the level to happen once, unless the player repeats it or fails it. Level is the function . The event is 60000 milliseconds, 60 seconds, which willbe how long the player takes to answer the questions
 
 // i want to access the timer elemenet so i slect its class id.
-
 //function countDown()
-
 //function template for game 
-
-
-
-
-
 //for getting the right or wrong answer n the level
-
-
-
-
 //let levelOne = 
 
 function correctAnswerLevelOne() {
-  document.getElementById("result-message").innerHTML = "Well Done, You are through to the next level!"
+  document.getElementById("result-message").innerHTML = "Well Done, You are through to the next level!";
+  document.getElementById("levelName").innerHTML = " Meeting Evange";
+  document.getElementById("para").innerHTML = " random text";
+  document.getElementById("imageforlevel").src = "ScreenShot2018-12-03at14.17.35.png"
 }
 const correctAnswer = document.getElementById("answerOne").addEventListener("click", function () {
   console.log("Check!")
@@ -58,13 +50,13 @@ const correctAnswer = document.getElementById("answerOne").addEventListener("cli
 
 
 //function template for the wrong answer
-function wrongAnswer() {
-  document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
-}
-const wrongAnswer = document.getElementById("answerTwo").addEventListener("click", function () {
-  console.log("whack!")
-  wrongAnswer()
-});
+//function wrongAnswer() {
+  //document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
+//}
+//const wrongAnswer = document.getElementById("answerTwo").addEventListener("click", function () //{
+  //console.log("whack!")
+  //wrongAnswer()
+//});
 
 
 //tree of life function template
