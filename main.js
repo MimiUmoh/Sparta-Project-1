@@ -44,57 +44,75 @@
 //for getting the right or wrong answer n the level
 
 //function template for right answer
-//function wellDone() {
-//document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
-//}
-//const correctAnswer = document.getElementById("correct").addEventListener("click", function () {
-// console.log("Check!")
-// wellDone()
-//})
-//function template for the wrong answer
-var testing = document.getElementById("testPage");
+let levelOne = document.getElementById("answerOne").addEventListener("click", function () {
+  console.log("Check!")
+  correctAnswerLevelOne()
+});
+if (levelOne == document.getElementById("answerOne").addEventListener("click", function () {
+  console.log("Check!")
+  correctAnswerLevelOne()
+})) {
+  document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
+}
+else {
+  document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
+}
 
-if (testing === document.getElementById("testPage")) {
-  function tooBad() {
-    document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
-  }
-  var wrongAnswer = document.getElementById("wrong-one").addEventListener("click", function () {
-    console.log("whack!")
-    tooBad()
-  })
-};
+
+
+
+
+
+
+
+//let levelOne = 
+
+//function correctAnswerLevelOne() {
+  ////document.getElementById("result-message").innerHTML = "Well Done, YOu are through to the next level!"
+//}
+//const correctAnswer = document.getElementById("answerOne").addEventListener("click", function () {
+ // console.log("Check!")
+ //// correctAnswerLevelOne()
+//});
+
+
+
+//function template for the wrong answer
+//function tooBad() {
+  //document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
+//}
+//var wrongAnswer = document.getElementById("wrong-one").addEventListener("click", function () {
+ // console.log("whack!")
+ //// tooBad()
+//})
 
 
 //tree of life function template
+//var treeOfLifePage = document.title("")
 
-var treeOfLifePage = document.getElementById("levelTree");
-
-if (treeOfLifePage == document.getElementById("levelTree")) {
-  function treeOfLife1() {
-    document.getElementById("first-message").innerText = "Its leaves";
-  }
-  const treeOfLifeOne = document.getElementById("tree-of-life-one").addEventListener("click", function () {
-    console.log("leaves");
-    treeOfLife1();
-  })
-};
+//if (treeOfLifePage === document.getElementById//("levelTree")) {
+// function treeOfLife1() {
+//  document.getElementById("first-message")//.innerText = "Its leaves";
+// }
+//treeOfLifeOne = document.getElementById//("tree-of-life-one").addEventListener("click", //treeOfLife1)
+//};
 
 
-function treeOfLife2() {
-  document.getElementById("second message").innerText = "Are for";
-}
-const treeOfLifeTwo = document.getElementById("tree-of-life-two").addEventListener("click", function () {
-  console.log("leaves2");
-  treeOfLife2();
-});
+//function treeOfLife2() {
+  ///document.getElementById("second message").innerText = "Are for";
+//}
+//const treeOfLifeTwo = document.getElementById("tree-of-life-two").addEventListener("click", function () {
+  //console.log("leaves2");
+  //treeOfLife2();
+//});
 
-function treeOfLife3() {
-  document.getElementById("third-message").innerText = "Your healing";
-}
-const treeOfLifeThree = document.getElementById("tree-of-life-three").addEventListener("click", function () {
-  console.log("leaves3");
-  treeOfLife1();
-});
+//function treeOfLife3() {
+  //document.getElementById("third-message").innerText = "Your healing";
+//}
+//const treeOfLifeThree = document.getElementById("tree-of-life-three").addEventListener("click", function () {
+  //console.log("leaves3");
+  ////treeOfLife1();
+//});
 
 // if any of the buttons are clicked , then there will be a healing level point system, where the points increase.
 
