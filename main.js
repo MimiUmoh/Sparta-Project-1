@@ -1,3 +1,4 @@
+
 // Game plan.
 
 // My game is going to be a text based adventure game based on th story Pilgrims progress, Journey to the celestial city. 
@@ -51,28 +52,49 @@
 // wellDone()
 //})
 //function template for the wrong answer
-function tooBad() {
-  document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
-}
-const wrongAnswer = document.getElementById("wrong-one").addEventListener("click", function () {
-  console.log("whack!")
-  tooBad()
-})
+var testing = document.getElementById("testPage");
 
-//Or maybe when the user clicks on the right answer there is a href within the right answer that will go immediately to the next level . the right answer will dothis instead of displaying the message well done. when the user clicks on the right answer a score is logged in and points are generated. 
+if (testing === document.getElementById("testPage")) {
+  function tooBad() {
+    document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
+  }
+  var wrongAnswer = document.getElementById("wrong-one").addEventListener("click", function () {
+    console.log("whack!")
+    tooBad()
+  })
+};
 
-//An isntructions page will be at the front page. The reader will see it before starting the game.
 
 //tree of life function template
-function treeOfLife() {
-  document.getElementById("first-message").innerHTML = "ITS LEAVES"
-}
 
-function treeOfLife1() {
-  document.getElementById("first-message-two").innerHTML = "ARE FOR"
-}
+var treeOfLifePage = document.getElementById("levelTree");
 
-function tooBad() {
-  document.getElementById("first-message-three").innerHTML = "Your Healing."
+if (treeOfLifePage == document.getElementById("levelTree")) {
+  function treeOfLife1() {
+    document.getElementById("first-message").innerText = "Its leaves";
+  }
+  const treeOfLifeOne = document.getElementById("tree-of-life-one").addEventListener("click", function () {
+    console.log("leaves");
+    treeOfLife1();
+  })
+};
+
+
+function treeOfLife2() {
+  document.getElementById("second message").innerText = "Are for";
 }
+const treeOfLifeTwo = document.getElementById("tree-of-life-two").addEventListener("click", function () {
+  console.log("leaves2");
+  treeOfLife2();
+});
+
+function treeOfLife3() {
+  document.getElementById("third-message").innerText = "Your healing";
+}
+const treeOfLifeThree = document.getElementById("tree-of-life-three").addEventListener("click", function () {
+  console.log("leaves3");
+  treeOfLife1();
+});
+
+// if any of the buttons are clicked , then there will be a healing level point system, where the points increase.
 
