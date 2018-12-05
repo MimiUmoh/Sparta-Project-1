@@ -1,90 +1,199 @@
+//stage one variables
 
-// Game plan.
+//Score and level
+var currentLevel = 1;
+var currentScore = 0;
+//Theme
+var Heading1 = document.getElementById("stage&level");
+var Heading2 = document.getElementById("levelName");
+var image = document.getElementById("imageforlevel");
+var question = document.getElementById("para");
+var scoreElement = document.getElementById("score");
+//Buttons
+var answerOne = document.getElementById("answerOne");
+var answerTwo = document.getElementById("answerTwo");
+var answerThree = document.getElementById("answerThree");
+var AnswerFour = document.getElementById("answerFour");
+//going from level one to level two
 
-// My game is going to be a text based adventure game based on th story Pilgrims progress, Journey to the celestial city. 
-//I want to incoporate sound, time, images and score keeping in the game.  If you get the right answer within a set  time, you move on to the next level, and accumulate points as you go. If you get the answer wrong or don't click on the right action, you don't move on to the next level.
+// function checkAnswer(answer) {
+//  if(buttonClicked === answer) {
+//    go to next level
+//  } else {
+//    do not go, give more time or ask the user to try again
+//  }
+// }
+//Headings and levels 
 
-//These are some of what I will be incoporating into codng the game:
-
-// A time counter 
-//Score keeping-tallying the scores. A system that reveals the scores at the end of the game. 
-//Else if and switch staments.
-//Loops i will be using are for loops and while loops.
-// Event listeners (click) and some animation affects.
-//Sound --music, that changes at every level 
-//Good images and animation. I will look into canvas--however, if i find it too difficult to comprehend, I will not incoporate canvas into my game.
-
-
-// (1) Time counter 
-
-// In may game for you to get points and move on to the next level, you have to click on the right answer before time runs out. Therefore the function for this to work, will have to read like this:
-
-//"If player, clicks on the right answer before counter gets to zero, award them with 5 points and  go on to the next level--then reset counter. 
-//Else player clicks on the wrong answer whilst the counter is going and/ or doesnt click on an answer, make them repeat the level (while loop will be used here)."
-//players will be given 60 seconds to answer the question. I'll be using setTimeout for this because it ony calls the function once and
-
-//var timer = document.getElementById("timer").innerHTML = "0";
-
-// function Level () {}
-
-//setTimeout( Level, 60000 )
-
-// I am using the setTimeout becaus i only want the level to happen once, unless the player repeats it or fails it. Level is the function . The event is 60000 milliseconds, 60 seconds, which willbe how long the player takes to answer the questions
-
-// i want to access the timer elemenet so i slect its class id.
-//function countDown()
-//function template for game 
-//for getting the right or wrong answer n the level
-//let levelOne = 
-
-function correctAnswerLevelOne() {
-  document.getElementById("result-message").innerHTML = "Well Done, You are through to the next level!";
-  document.getElementById("levelName").innerHTML = " Meeting Evange";
-  document.getElementById("para").innerHTML = " random text";
-  document.getElementById("imageforlevel").src = "ScreenShot2018-12-03at14.17.35.png"
+//these are the functions called when the if else statements are true.
+function goLevel2() {
+  currentLevel = 2;
+  Heading1.innerHTML = "Level Two";
+  Heading2.innerHTML = "meeting Evangelist";
+  image.src = "Images_for_pilgrims_progress/ScreenShot2018-12-03at14.17.35.png";
+  question.innerHTML = "you managed to get past the crowd";
 }
-const correctAnswer = document.getElementById("answerOne").addEventListener("click", function () {
-  console.log("Check!")
-  correctAnswerLevelOne()
+
+function goLevel3() {
+  currentLevel = 3;
+  Heading1.innerHTML = "Level three";
+  Heading2.innerHTML = "we getting there";
+  image.src = "Images_for_pilgrims_progress/JohnBunyan.png";
+  question.innerHTML = "randomness";
+}
+
+function goLevel4() {
+  currentLevel = 4;
+  Heading1.innerHTML = "Level 4";
+  Heading2.innerHTML = "almost there";
+  image.src = "Images_for_pilgrims_progress/ScreenShot2018-12-03at14.17.35.png";
+  question.innerHTML = "progress--yeh yeah yeah ";
+}
+
+// if the current level (number) then the player has to click on the right button (number) which corresposnds to answer one, two and three. then the score level incremennts. if they click on the worng answer then thy get an alert saying wrong answer. there  will be amny if else statemennts becasue my game willhave alot of levels.
+function clickButton(button) {
+
+  if (currentLevel == 1) {
+    var correctButton = 1;
+    if (button == correctButton) {
+      goLevel2();
+      currentScore += 5;
+    } else {
+      alert('wrong answer');
+    }
+  } else if (currentLevel == 2) {
+    var correctButton = 4;
+    if (button == correctButton) {
+      goLevel3()
+      currentScore += 5;
+    } else {
+      alert('wrong answer');
+    }
+  }
+  else if (currentLevel == 3) {
+    var correctButton = 1;
+    if (button == correctButton) {
+      goLevel4()
+      currentScore += 5;
+    } else {
+      alert('wrong answer');
+    }
+  }
+
+  //score element = current score. innerHtml  is put in here so that the score can show on the html page.
+  scoreElement.innerHTML = currentScore;
+}
+
+
+
+
+
+//event clickers for the buttons, answerone is  button one and answer two is button two etc.
+answerOne.addEventListener("click", function () {
+  clickButton(1);
+});
+
+answerTwo.addEventListener("click", function () {
+  clickButton(2);
+});
+
+answerThree.addEventListener("click", function () {
+  clickButton(3);
+});
+
+AnswerFour.addEventListener("click", function () {
+  clickButton(4);
 });
 
 
-//function template for the wrong answer
-//function wrongAnswer() {
-  //document.getElementById("result-message").innerHTML = "You were not successful this time, Please repeat again."
-//}
-//const wrongAnswer = document.getElementById("answerTwo").addEventListener("click", function () //{
-  //console.log("whack!")
-  //wrongAnswer()
+
+
+
+/*
+function goLevel2() {
+  Heading1.innerHTML = "Stage One Level Two";
+  Heading2.innerHTML = "meeting Evangelist";
+  image.src = "Images_for_pilgrims_progress/ScreenShot2018-12-03at14.17.35.png";
+  question.innerHTML = "you managed to get past the crowd";
+  //answerTwo = answer
+  //checkLevel(answerTwo)
+};
+
+
+if (answerOne === document.getElementById("answerOne")) {
+  answerOne.addEventListener("click", function () {
+    console.log("Check!")
+    goLevel2();
+
+  });
+}
+
+
+//going from level two to level three
+function goLevel3() {
+  Heading1.innerHTML = "Stage One Level Three";
+  Heading2.innerHTML = "big burdens";
+  image.src = "Images_for_pilgrims_progress/JohnBunyan.png";
+  question.innerHTML = "you aint serious";
+}
+if (answerTwo === document.getElementById("answerTwo")) {
+  answerTwo.addEventListener("click", function () {
+    console.log("Check2")
+    goLevel3()
+  });
+}
+
+
+
+
+
+
+
+
+
+//going from level three to level four 
+function goLevel4() {
+  Heading1.innerHTML = "Stage One Level four";
+  Heading2.innerHTML = "slowly getting there";
+  image.src = "Images_for_pilgrims_progress/JohnBunyan.png";
+  question.innerHTML = "is it working yet";
+}
+
+if (answerFour === document.getElementById("answerFour")) {
+  answerFour.addEventListener("click", function () {
+    console.log("Check6")
+    goLevel4()
+  });
+}
+
+
+
+
+
+
+//for correct ansnwer and moving into the next level
+//var correctAnswer = document.getElementById("answerOne").addEventListener("click", function () {
+ // console.log("Check!")
+  //correctAnswerLevelOne()
 //});
 
 
-//tree of life function template
-//var treeOfLifePage = document.title("")
+//function correctAnswerLevelOne() {
 
-//if (treeOfLifePage === document.getElementById//("levelTree")) {
-// function treeOfLife1() {
-//  document.getElementById("first-message")//.innerText = "Its leaves";
-// }
-//treeOfLifeOne = document.getElementById//("tree-of-life-one").addEventListener("click", //treeOfLife1)
-//};
-
-
-//function treeOfLife2() {
-  ///document.getElementById("second message").innerText = "Are for";
+  //document.getElementById("levelName").innerHTML = " Meeting Evange";
+  //document.getElementById("para").innerHTML = "you managed to get past the crowd";
+  //document.getElementById("imageforlevel").src = "Images_for_pilgrims_progress/ScreenShot2018-12-03at14.17.35.png";
 //}
-//const treeOfLifeTwo = document.getElementById("tree-of-life-two").addEventListener("click", function () {
-  //console.log("leaves2");
-  //treeOfLife2();
-//});
 
-//function treeOfLife3() {
-  //document.getElementById("third-message").innerText = "Your healing";
-//}
-//const treeOfLifeThree = document.getElementById("tree-of-life-three").addEventListener("click", function () {
-  //console.log("leaves3");
-  ////treeOfLife1();
-//});
 
-// if any of the buttons are clicked , then there will be a healing level point system, where the points increase.
+
+
+
+
+*/
+
+
+
+
+
 
