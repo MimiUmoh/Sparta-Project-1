@@ -11,7 +11,7 @@ The Pilgrims progress game is a story game where for the player to go to the nex
 
 ### How to download 
 1. Follow the link and and clone the project: https://mimiumoh.github.io/Sparta-Project-1/. 
-2. Then open the index.html and then start the game.
+2. Then follow the instructions.
 
 ### Challenges 
 1. My if statments were not wrapped up in a function, that meant if I clicked on any button, it would take me to a certain level. There was no chronological order for my game because I had not programmed it in a way where certain condtions had to be met. 
