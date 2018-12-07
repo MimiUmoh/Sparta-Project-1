@@ -7,7 +7,7 @@
 3. Javascript
 
 ### Description
-The Pilgrims progress game is a story game where for the player to go to the next level, they have to click on the right answer. For every answer they get right, they get points and move on to the next level. If they get an answer wrong, they lose points and a prompt message pops up to make them click on the right button until they go on to the next level. The purpose of the game is to perservere on the journey until the final destination is reached, which is the Celestial city. Once all levels are completed and the Celestial city has been reached, the player will be awarded with the Crown of life for making the journey.
+The Pilgrim's progress game is a story game where for the player to go to the next level, they have to click on the right answer. For every answer they get right, they get points and move on to the next level. If they get an answer wrong, they lose points and a prompt message pops up to make them click on the right button until they go on to the next level. The purpose of the game is to perservere on the journey until the final destination is reached, which is the Celestial city. Once all levels are completed and the Celestial city has been reached, the player will be awarded with the Crown of life for making the journey.
 
 ### How to download 
 1. Follow the link and and clone the project: https://mimiumoh.github.io/Sparta-Project-1/. 
