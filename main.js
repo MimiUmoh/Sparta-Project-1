@@ -329,13 +329,13 @@ function goLevel27() {
   AnswerFour.remove = " ";
 }
 function Crown() {
-  currentLevel = 26;
+  currentLevel = 27;
   Heading1.innerHTML = "The CROWN OF LIFE";
   Heading2.innerHTML = " Your score is ";
   image.src = "PilgrimProgress/crownOfLife.png";
   question.innerHTML = " FOREVER YOU LIVE IN THE CELESTIAL CITY";
   answerOne.innerHTML = " ";
-  answerTwo.innerHTML = " ";
+  answerTwo.innerHTML = " Recieve Your Crown";
   answerThree.remove = " ";
   AnswerFour.remove = " ";
 }
@@ -640,16 +640,7 @@ function clickButton(button) {
     }
   }
 
-  else if (currentLevel == 27) {
-    var correctButton = 2;
-    if (button == correctButton) {
-      Crown()
-      currentScore += 10;
-      promptMessage.innerHTML = " ";
-    } else {
-      promptMessage.innerHTML = " YOU WERE FAITHFUL UNTIL THE END";
-    }
-  }
+
   //score element = current score. innerHtml  is put in here so that the score can show on the html page.
   scoreElement.innerHTML = currentScore;
 }
