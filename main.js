@@ -37,7 +37,7 @@ function goLevel3() {
   answerOne.innerHTML = "Go through the slough and risk drowning";
   answerTwo.innerHTML = "Revert back to where Obstinate and Pliable  caught up with you,  and try to find a shortcut";
   answerThree.innerHTML = "Go back to the City of Destruction; this Journey is too difficult ";
-  AnswerFour.innerHTML = " Go back to where you met Evangelist so he can offer you help and advice";
+  AnswerFour.innerHTML = " Go back to where you met Evangelist so he can offer you help and advise";
 }
 //go level 4
 function goLevel4() {
@@ -45,11 +45,11 @@ function goLevel4() {
   Heading1.innerHTML = "Level 4";
   Heading2.innerHTML = "Mr Wiseman";
   image.src = "PilgrimProgress/levelFour.png";
-  question.innerHTML = "Ahh ! You decided to go through the despondent slough. Due to the heavy burdens on your back, you are sinking. Pliable was angry, and has now left you.  Fortunately for you, a man called Help appears out of no where; he points you to some stepping stones to help you get out of the slough. Now, you can continue your journey towards the wicket gate to the Celestial City. As you go your way, you suddenly come across a man called Mr “Wiseman”, who dwells in the town of Worldly Policy. Mr “Wiseman” then says to you, “I see you there, good man, those burdens on your back must be giving you reprehensible pain. I know of a noble man that can take your burdens away; the name of this good fellow is Mr Legality.  This path you are on will not lead you to Mr legality; be a good lad and go down this hill that will take you to his abode.” Mr Wiseman shows you the direction. You are in dire need of help and, seriously, need to get rid of your burdens. What SHOULD you do?";
+  question.innerHTML = "Ahh ! You decided to go through the despondent slough. Due to the heavy burdens on your back, you are sinking. Pliable was angry, and has now left you.  Fortunately for you, a man called Help appears out of no where; he points you to some stepping stones to help you get out of the slough. Now, you can continue your journey towards the wicket gate to the Celestial City. As you go your way, you suddenly come across a man called Mr Wiseman, who dwells in the town of Worldly Policy. Mr Wiseman then says to you, “I see you there, good man, those burdens on your back must be giving you reprehensible pain. I know of a noble man that can take your burdens away; the name of this good fellow is Mr Legality.  This path you are on will not lead you to Mr legality; be a good lad and go down this hill that will take you to his abode.” Mr Wiseman shows you the direction. You are in dire need of help and, seriously, need to get rid of your burdens. What SHOULD you do?";
   answerOne.innerHTML = " Don’t listen to Mr “Wiseman” even though his advise seems feasible and well-intended ";
   answerTwo.innerHTML = "Go down the hill to find Mr Legality ";
   answerThree.innerHTML = "Go back with Mr “Wiseman” to the Town of Worldly Policy to get some food to eat";
-  AnswerFour.innerHTML = "Just continue entertaining Mr “Wiseman” by talking to him";
+  AnswerFour.innerHTML = "Just continue entertaining Mr Wiseman by talking to him";
 }
 //go level 5
 function goLevel5() {
