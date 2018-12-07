@@ -7,7 +7,9 @@
 #levelName {
   text-align: center;
 }
-
+#promptMessage {
+  text-align: center;
+}
 #score {
   text-align: center;
 }
