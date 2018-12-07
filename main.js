@@ -488,7 +488,6 @@ function clickButton(button) {
       promptMessage.innerHTML = " Click on the right button..."
     }
   }
-
   //level 14
   else if (currentLevel == 14) {
     var correctButton = 1;
