@@ -318,7 +318,7 @@ function goLevel26() {
 }
 //Celestial City 
 function goLevel27() {
-  currentLevel = 26;
+  currentLevel = 27;
   Heading1.innerHTML = " The Celestial City";
   Heading2.innerHTML = " ";
   image.src = " PilgrimProgress/celestial city.png";
@@ -329,7 +329,7 @@ function goLevel27() {
   AnswerFour.remove = " ";
 }
 function Crown() {
-  currentLevel = 27;
+  currentLevel = 28;
   Heading1.innerHTML = "The CROWN OF LIFE";
   Heading2.innerHTML = " Your score is ";
   image.src = "PilgrimProgress/crownOfLife.png";
@@ -638,7 +638,17 @@ function clickButton(button) {
       promptMessage.innerHTML = "You are nearly there!"
     }
   }
-
+  //level 27
+  else if (currentLevel == 27) {
+    var correctButton = 2;
+    if (button == correctButton) {
+      Crown()
+      currentScore += 10;
+      promptMessage.innerHTML = " ";
+    } else {
+      promptMessage.innerHTML = "WELL DONE!"
+    }
+  }
 
   //score element = current score. innerHtml  is put in here so that the score can show on the html page.
   scoreElement.innerHTML = currentScore;
