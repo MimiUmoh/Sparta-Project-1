@@ -505,10 +505,10 @@ function clickButton(button) {
     if (button == correctButton) {
       goLevel16()
       currentScore += 5;
-      promptMessage = " ";
+      promptMessage = "  ";
     } else {
       currentScore -= 2;
-      promptMessage.innerHTML = "Wrong answer";
+      promptMessage.innerHTML = " Wrong answer";
     }
   }
   //level 16
