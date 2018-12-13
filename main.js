@@ -9,6 +9,7 @@ var image = document.getElementById("imageforlevel");
 var question = document.getElementById("para");
 var scoreElement = document.getElementById("score");
 var promptMessage = document.getElementById("promptMessage");
+var promptMessage2 = document.getElementById("promptMessage2");
 //Buttons
 var answerOne = document.getElementById("answerOne");
 var answerTwo = document.getElementById("answerTwo");
@@ -501,14 +502,14 @@ function clickButton(button) {
   }
   //level 15
   else if (currentLevel == 15) {
-    var correctButton = 4;
+    var correctButton = 3;
     if (button == correctButton) {
       goLevel16()
       currentScore += 5;
-      promptMessage = "  ";
+      promptMessage.innerHTML = " ";
     } else {
       currentScore -= 2;
-      promptMessage.innerHTML = " Wrong answer";
+      promptMessage.innerHTML = "Wrong answer!";
     }
   }
   //level 16
